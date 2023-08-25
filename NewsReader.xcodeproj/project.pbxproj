@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FA5896B32A990863003A5149 /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5896B22A990863003A5149 /* ListView.swift */; };
+		FA5896B52A990910003A5149 /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5896B42A990910003A5149 /* Article.swift */; };
+		FA5896B72A990931003A5149 /* PopularResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5896B62A990931003A5149 /* PopularResult.swift */; };
+		FA5896B92A990952003A5149 /* PageInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5896B82A990952003A5149 /* PageInfo.swift */; };
+		FA5896BB2A9909A4003A5149 /* NetworkConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5896BA2A9909A4003A5149 /* NetworkConstants.swift */; };
+		FA5896BD2A9909CA003A5149 /* APICall.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5896BC2A9909CA003A5149 /* APICall.swift */; };
+		FA5896BF2A9909EF003A5149 /* NetworkUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5896BE2A9909EF003A5149 /* NetworkUseCase.swift */; };
+		FA5896C12A990A4B003A5149 /* NetworkingHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5896C02A990A4B003A5149 /* NetworkingHelpers.swift */; };
+		FA5896C32A990A73003A5149 /* Loadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5896C22A990A73003A5149 /* Loadable.swift */; };
+		FA5896C52A990A8D003A5149 /* CancelBag.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5896C42A990A8D003A5149 /* CancelBag.swift */; };
 		FAE6E1ED2A98DEDD001407E2 /* NewsReaderApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE6E1EC2A98DEDD001407E2 /* NewsReaderApp.swift */; };
 		FAE6E1F22A98DEDD001407E2 /* NewsReader.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FAE6E1F02A98DEDD001407E2 /* NewsReader.xcdatamodeld */; };
 		FAE6E1F42A98DEDD001407E2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE6E1F32A98DEDD001407E2 /* ContentView.swift */; };
@@ -15,6 +25,16 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FA5896B22A990863003A5149 /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
+		FA5896B42A990910003A5149 /* Article.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Article.swift; sourceTree = "<group>"; };
+		FA5896B62A990931003A5149 /* PopularResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularResult.swift; sourceTree = "<group>"; };
+		FA5896B82A990952003A5149 /* PageInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageInfo.swift; sourceTree = "<group>"; };
+		FA5896BA2A9909A4003A5149 /* NetworkConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkConstants.swift; sourceTree = "<group>"; };
+		FA5896BC2A9909CA003A5149 /* APICall.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APICall.swift; sourceTree = "<group>"; };
+		FA5896BE2A9909EF003A5149 /* NetworkUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkUseCase.swift; sourceTree = "<group>"; };
+		FA5896C02A990A4B003A5149 /* NetworkingHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingHelpers.swift; sourceTree = "<group>"; };
+		FA5896C22A990A73003A5149 /* Loadable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Loadable.swift; sourceTree = "<group>"; };
+		FA5896C42A990A8D003A5149 /* CancelBag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CancelBag.swift; sourceTree = "<group>"; };
 		FAE6E1E92A98DEDD001407E2 /* NewsReader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NewsReader.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAE6E1EC2A98DEDD001407E2 /* NewsReaderApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsReaderApp.swift; sourceTree = "<group>"; };
 		FAE6E1F12A98DEDD001407E2 /* NewsReader.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = NewsReader.xcdatamodel; sourceTree = "<group>"; };
@@ -56,6 +76,8 @@
 		FA5896A72A990593003A5149 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				FA5896C22A990A73003A5149 /* Loadable.swift */,
+				FA5896C42A990A8D003A5149 /* CancelBag.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -63,6 +85,10 @@
 		FA5896A82A9905BA003A5149 /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				FA5896BA2A9909A4003A5149 /* NetworkConstants.swift */,
+				FA5896BC2A9909CA003A5149 /* APICall.swift */,
+				FA5896BE2A9909EF003A5149 /* NetworkUseCase.swift */,
+				FA5896C02A990A4B003A5149 /* NetworkingHelpers.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -107,6 +133,7 @@
 		FA5896B02A990677003A5149 /* List */ = {
 			isa = PBXGroup;
 			children = (
+				FA5896B22A990863003A5149 /* ListView.swift */,
 			);
 			path = List;
 			sourceTree = "<group>";
@@ -114,6 +141,9 @@
 		FA5896B12A990691003A5149 /* Entities */ = {
 			isa = PBXGroup;
 			children = (
+				FA5896B42A990910003A5149 /* Article.swift */,
+				FA5896B62A990931003A5149 /* PopularResult.swift */,
+				FA5896B82A990952003A5149 /* PageInfo.swift */,
 			);
 			path = Entities;
 			sourceTree = "<group>";
@@ -230,9 +260,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA5896BF2A9909EF003A5149 /* NetworkUseCase.swift in Sources */,
+				FA5896BB2A9909A4003A5149 /* NetworkConstants.swift in Sources */,
+				FA5896B92A990952003A5149 /* PageInfo.swift in Sources */,
+				FA5896B32A990863003A5149 /* ListView.swift in Sources */,
 				FAE6E1F22A98DEDD001407E2 /* NewsReader.xcdatamodeld in Sources */,
+				FA5896C32A990A73003A5149 /* Loadable.swift in Sources */,
 				FAE6E1ED2A98DEDD001407E2 /* NewsReaderApp.swift in Sources */,
+				FA5896C52A990A8D003A5149 /* CancelBag.swift in Sources */,
 				FAE6E1F42A98DEDD001407E2 /* ContentView.swift in Sources */,
+				FA5896B72A990931003A5149 /* PopularResult.swift in Sources */,
+				FA5896B52A990910003A5149 /* Article.swift in Sources */,
+				FA5896C12A990A4B003A5149 /* NetworkingHelpers.swift in Sources */,
+				FA5896BD2A9909CA003A5149 /* APICall.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
