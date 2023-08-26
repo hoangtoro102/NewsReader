@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="21754" systemVersion="22F82" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Article" representedClassName="ArticleMO" syncable="YES" codeGenerationType="class">
+        <attribute name="id" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="publishedDate" optional="YES" attributeType="String"/>
+        <attribute name="title" optional="YES" attributeType="String"/>
+        <relationship name="media" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Media" inverseName="article" inverseEntity="Media"/>
+    </entity>
+    <entity name="Media" representedClassName="MediaMO" syncable="YES" codeGenerationType="class">
+        <attribute name="type" optional="YES" attributeType="String"/>
+        <relationship name="article" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Article" inverseName="media" inverseEntity="Article"/>
+        <relationship name="mediaMetadata" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Metadata" inverseName="media" inverseEntity="Metadata"/>
+    </entity>
+    <entity name="Metadata" representedClassName="MetadataMO" syncable="YES" codeGenerationType="class">
+        <attribute name="url" optional="YES" attributeType="String"/>
+        <relationship name="media" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Media" inverseName="mediaMetadata" inverseEntity="Media"/>
+    </entity>
+</model>

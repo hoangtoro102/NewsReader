@@ -26,8 +26,13 @@
 		FA5896DA2A99A1E0003A5149 /* ImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5896D92A99A1E0003A5149 /* ImageView.swift */; };
 		FA5896DC2A99A2C1003A5149 /* ImageWebRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5896DB2A99A2C1003A5149 /* ImageWebRepository.swift */; };
 		FA5896DE2A99A4C9003A5149 /* ImagesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5896DD2A99A4C9003A5149 /* ImagesService.swift */; };
+		FA5896E22A99B105003A5149 /* CoreDataHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5896E12A99B105003A5149 /* CoreDataHelpers.swift */; };
+		FA5896E42A99B12A003A5149 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5896E32A99B12A003A5149 /* CoreDataStack.swift */; };
+		FA5896E62A99B156003A5149 /* LazyList.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5896E52A99B156003A5149 /* LazyList.swift */; };
+		FA5896E82A99BE61003A5149 /* ArticlesDBRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5896E72A99BE61003A5149 /* ArticlesDBRepository.swift */; };
+		FA5896EA2A99C000003A5149 /* Models+CoreData.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5896E92A99C000003A5149 /* Models+CoreData.swift */; };
 		FAE6E1ED2A98DEDD001407E2 /* NewsReaderApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE6E1EC2A98DEDD001407E2 /* NewsReaderApp.swift */; };
-		FAE6E1F22A98DEDD001407E2 /* NewsReader.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FAE6E1F02A98DEDD001407E2 /* NewsReader.xcdatamodeld */; };
+		FAE6E1F22A98DEDD001407E2 /* db_model_v1.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FAE6E1F02A98DEDD001407E2 /* db_model_v1.xcdatamodeld */; };
 		FAE6E1F42A98DEDD001407E2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE6E1F32A98DEDD001407E2 /* ContentView.swift */; };
 		FAE6E1F62A98DEDE001407E2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAE6E1F52A98DEDE001407E2 /* Assets.xcassets */; };
 		FAE6E1FA2A98DEDE001407E2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAE6E1F92A98DEDE001407E2 /* Preview Assets.xcassets */; };
@@ -53,6 +58,11 @@
 		FA5896D92A99A1E0003A5149 /* ImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageView.swift; sourceTree = "<group>"; };
 		FA5896DB2A99A2C1003A5149 /* ImageWebRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageWebRepository.swift; sourceTree = "<group>"; };
 		FA5896DD2A99A4C9003A5149 /* ImagesService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagesService.swift; sourceTree = "<group>"; };
+		FA5896E12A99B105003A5149 /* CoreDataHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataHelpers.swift; sourceTree = "<group>"; };
+		FA5896E32A99B12A003A5149 /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
+		FA5896E52A99B156003A5149 /* LazyList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LazyList.swift; sourceTree = "<group>"; };
+		FA5896E72A99BE61003A5149 /* ArticlesDBRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticlesDBRepository.swift; sourceTree = "<group>"; };
+		FA5896E92A99C000003A5149 /* Models+CoreData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Models+CoreData.swift"; sourceTree = "<group>"; };
 		FAE6E1E92A98DEDD001407E2 /* NewsReader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NewsReader.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAE6E1EC2A98DEDD001407E2 /* NewsReaderApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsReaderApp.swift; sourceTree = "<group>"; };
 		FAE6E1F12A98DEDD001407E2 /* NewsReader.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = NewsReader.xcdatamodel; sourceTree = "<group>"; };
@@ -97,6 +107,7 @@
 				FA5896C22A990A73003A5149 /* Loadable.swift */,
 				FA5896C42A990A8D003A5149 /* CancelBag.swift */,
 				FA5896D12A9925A2003A5149 /* Store.swift */,
+				FA5896E52A99B156003A5149 /* LazyList.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -115,6 +126,10 @@
 		FA5896A92A9905BF003A5149 /* CoreData */ = {
 			isa = PBXGroup;
 			children = (
+				FAE6E1F02A98DEDD001407E2 /* db_model_v1.xcdatamodeld */,
+				FA5896E12A99B105003A5149 /* CoreDataHelpers.swift */,
+				FA5896E32A99B12A003A5149 /* CoreDataStack.swift */,
+				FA5896E92A99C000003A5149 /* Models+CoreData.swift */,
 			);
 			path = CoreData;
 			sourceTree = "<group>";
@@ -132,6 +147,7 @@
 			children = (
 				FA5896CA2A9919A2003A5149 /* ArticlesWebRepository.swift */,
 				FA5896DB2A99A2C1003A5149 /* ImageWebRepository.swift */,
+				FA5896E72A99BE61003A5149 /* ArticlesDBRepository.swift */,
 			);
 			path = Repositories;
 			sourceTree = "<group>";
@@ -211,7 +227,6 @@
 				FA5896A42A990562003A5149 /* UI */,
 				FAE6E1F52A98DEDE001407E2 /* Assets.xcassets */,
 				FAE6E1F72A98DEDE001407E2 /* NewsReader.entitlements */,
-				FAE6E1F02A98DEDD001407E2 /* NewsReader.xcdatamodeld */,
 				FAE6E1F82A98DEDE001407E2 /* Preview Content */,
 			);
 			path = NewsReader;
@@ -301,11 +316,13 @@
 				FA5896BB2A9909A4003A5149 /* NetworkConstants.swift in Sources */,
 				FA5896C72A991782003A5149 /* ListViewModel.swift in Sources */,
 				FA5896D22A9925A2003A5149 /* Store.swift in Sources */,
+				FA5896EA2A99C000003A5149 /* Models+CoreData.swift in Sources */,
+				FA5896E22A99B105003A5149 /* CoreDataHelpers.swift in Sources */,
 				FA5896B32A990863003A5149 /* ListView.swift in Sources */,
 				FA5896C92A991792003A5149 /* DisplayItem.swift in Sources */,
 				FA5896CE2A991F2A003A5149 /* ArticleService.swift in Sources */,
 				FA5896D42A99266A003A5149 /* ErrorView.swift in Sources */,
-				FAE6E1F22A98DEDD001407E2 /* NewsReader.xcdatamodeld in Sources */,
+				FAE6E1F22A98DEDD001407E2 /* db_model_v1.xcdatamodeld in Sources */,
 				FA5896C32A990A73003A5149 /* Loadable.swift in Sources */,
 				FAE6E1ED2A98DEDD001407E2 /* NewsReaderApp.swift in Sources */,
 				FA5896C52A990A8D003A5149 /* CancelBag.swift in Sources */,
@@ -313,7 +330,10 @@
 				FA5896B72A990931003A5149 /* PopularResult.swift in Sources */,
 				FA5896CB2A9919A2003A5149 /* ArticlesWebRepository.swift in Sources */,
 				FA5896B52A990910003A5149 /* Article.swift in Sources */,
+				FA5896E62A99B156003A5149 /* LazyList.swift in Sources */,
+				FA5896E82A99BE61003A5149 /* ArticlesDBRepository.swift in Sources */,
 				FA5896C12A990A4B003A5149 /* NetworkingHelpers.swift in Sources */,
+				FA5896E42A99B12A003A5149 /* CoreDataStack.swift in Sources */,
 				FA5896DE2A99A4C9003A5149 /* ImagesService.swift in Sources */,
 				FA5896BD2A9909CA003A5149 /* APICall.swift in Sources */,
 				FA5896D82A9926AD003A5149 /* DetailRow.swift in Sources */,
@@ -528,13 +548,13 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		FAE6E1F02A98DEDD001407E2 /* NewsReader.xcdatamodeld */ = {
+		FAE6E1F02A98DEDD001407E2 /* db_model_v1.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
 				FAE6E1F12A98DEDD001407E2 /* NewsReader.xcdatamodel */,
 			);
 			currentVersion = FAE6E1F12A98DEDD001407E2 /* NewsReader.xcdatamodel */;
-			path = NewsReader.xcdatamodeld;
+			path = db_model_v1.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
