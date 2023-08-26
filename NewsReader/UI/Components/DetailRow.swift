@@ -19,14 +19,13 @@ struct DetailRow: View {
     }
     
     var body: some View {
-        HStack {
+        HStack(alignment: .top) {
             imageView
                 .frame(width: 120, height: 120)
             VStack(alignment: .leading) {
                 titleLabel
                     .font(.headline)
                     .truncationMode(.tail)
-                Spacer()
                 dateLabel
                     .font(.callout)
             }
