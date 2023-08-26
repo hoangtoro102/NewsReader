@@ -21,16 +21,8 @@ extension Article {
         article.id = id ?? 0
         article.title = title
         article.publishedDate = publishedDate
-        let media = self.media?
-            .compactMap { element -> MediaMO? in
-                guard let mediaMetadata = element.mediaMetadata,
-                        let media = MediaMO.insertNew(in: context)
-                else { return nil }
-                media.type = element.type
-                media.mediaMetadata = NSSet(array: mediaMetadata)
-                return media
-            }
-        article.media = NSSet(array: media ?? [])
+        let storedMedia = (media ?? []).compactMap { $0.store(in: context) }
+        article.media = NSSet(array: storedMedia)
         return article
     }
     
@@ -63,15 +55,8 @@ extension Media {
         guard let media = MediaMO.insertNew(in: context)
             else { return nil }
         media.type = type
-        let metadata = self.mediaMetadata?
-            .compactMap { element -> MetadataMO? in
-                guard let url = element.url,
-                        let metadata = MetadataMO.insertNew(in: context)
-                else { return nil }
-                metadata.url = url
-                return metadata
-            }
-        media.mediaMetadata = NSSet(array: metadata ?? [])
+        let storedMetadata = (mediaMetadata ?? []).compactMap { $0.store(in: context) }
+        media.mediaMetadata = NSSet(array: storedMetadata)
         return media
     }
 }

@@ -15,7 +15,15 @@ extension ListView {
         
         // State
         @Published var articles: Loadable<[DisplayItem]> = .notRequested
-        private let articleService = DefaultArticleService(webRepository: DefaultArticlesRepository(session: NetworkConstants.urlSession, baseURL: NetworkConstants.API_BASE_URL))
+        private let articleService = DefaultArticleService(
+            webRepository: DefaultArticlesRepository(
+                session: NetworkConstants.urlSession,
+                baseURL: NetworkConstants.API_BASE_URL
+            ),
+            dbRepository: RealArticlesDBRepository(
+                persistentStore: CoreDataStack(version: CoreDataStack.Version.actual)
+            )
+        )
         
         // Misc
         private var cancelBag = CancelBag()
