@@ -78,7 +78,12 @@ extension ImageView {
         // Misc
         private var cancelBag = CancelBag()
         
-        private let imageService = RealImagesService(webRepository: RealImageWebRepository(session: NetworkConstants.urlSession))
+        private let imageService = RealImagesService(
+            webRepository:
+                RealImageWebRepository(
+                    session: NetworkConstants.urlSession),
+            fileCache: ImageFileCacheRepository()
+        )
         
         init(imageURL: URL, image: Loadable<UIImage> = .notRequested) {
             self.imageURL = imageURL

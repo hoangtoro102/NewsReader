@@ -16,9 +16,11 @@ protocol ImagesService {
 struct RealImagesService: ImagesService {
     
     let webRepository: ImageWebRepository
+    let fileCache: ImageCacheRepository
     
-    init(webRepository: ImageWebRepository) {
+    init(webRepository: ImageWebRepository, fileCache: ImageCacheRepository) {
         self.webRepository = webRepository
+        self.fileCache = fileCache
     }
     
     func load(image: LoadableSubject<UIImage>, url: URL?) {
@@ -27,10 +29,22 @@ struct RealImagesService: ImagesService {
         }
         let cancelBag = CancelBag()
         image.wrappedValue = .isLoading(last: image.wrappedValue.value, cancelBag: cancelBag)
-        webRepository.load(imageURL: url)
+        self.fileCache.cachedImage(for: url.imageCacheKey)
+            .catch { _ in
+                self.webRepository.load(imageURL: url)
+            }
             .sinkToLoadable {
+                if let image = $0.value {
+                    self.fileCache.cache(image: image, key: url.imageCacheKey)
+                }
                 image.wrappedValue = $0
             }
             .store(in: cancelBag)
+    }
+}
+
+extension URL {
+    var imageCacheKey: ImageCacheKey {
+        return absoluteString
     }
 }

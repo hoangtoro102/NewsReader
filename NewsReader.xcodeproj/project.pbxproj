@@ -31,6 +31,7 @@
 		FA5896E62A99B156003A5149 /* LazyList.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5896E52A99B156003A5149 /* LazyList.swift */; };
 		FA5896E82A99BE61003A5149 /* ArticlesDBRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5896E72A99BE61003A5149 /* ArticlesDBRepository.swift */; };
 		FA5896EA2A99C000003A5149 /* Models+CoreData.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5896E92A99C000003A5149 /* Models+CoreData.swift */; };
+		FA5896EC2A99E045003A5149 /* ImageFileCacheRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5896EB2A99E045003A5149 /* ImageFileCacheRepository.swift */; };
 		FAE6E1ED2A98DEDD001407E2 /* NewsReaderApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE6E1EC2A98DEDD001407E2 /* NewsReaderApp.swift */; };
 		FAE6E1F22A98DEDD001407E2 /* db_model_v1.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FAE6E1F02A98DEDD001407E2 /* db_model_v1.xcdatamodeld */; };
 		FAE6E1F42A98DEDD001407E2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE6E1F32A98DEDD001407E2 /* ContentView.swift */; };
@@ -63,6 +64,7 @@
 		FA5896E52A99B156003A5149 /* LazyList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LazyList.swift; sourceTree = "<group>"; };
 		FA5896E72A99BE61003A5149 /* ArticlesDBRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticlesDBRepository.swift; sourceTree = "<group>"; };
 		FA5896E92A99C000003A5149 /* Models+CoreData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Models+CoreData.swift"; sourceTree = "<group>"; };
+		FA5896EB2A99E045003A5149 /* ImageFileCacheRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageFileCacheRepository.swift; sourceTree = "<group>"; };
 		FAE6E1E92A98DEDD001407E2 /* NewsReader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NewsReader.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAE6E1EC2A98DEDD001407E2 /* NewsReaderApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsReaderApp.swift; sourceTree = "<group>"; };
 		FAE6E1F12A98DEDD001407E2 /* NewsReader.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = NewsReader.xcdatamodel; sourceTree = "<group>"; };
@@ -148,6 +150,7 @@
 				FA5896CA2A9919A2003A5149 /* ArticlesWebRepository.swift */,
 				FA5896DB2A99A2C1003A5149 /* ImageWebRepository.swift */,
 				FA5896E72A99BE61003A5149 /* ArticlesDBRepository.swift */,
+				FA5896EB2A99E045003A5149 /* ImageFileCacheRepository.swift */,
 			);
 			path = Repositories;
 			sourceTree = "<group>";
@@ -318,6 +321,7 @@
 				FA5896D22A9925A2003A5149 /* Store.swift in Sources */,
 				FA5896EA2A99C000003A5149 /* Models+CoreData.swift in Sources */,
 				FA5896E22A99B105003A5149 /* CoreDataHelpers.swift in Sources */,
+				FA5896EC2A99E045003A5149 /* ImageFileCacheRepository.swift in Sources */,
 				FA5896B32A990863003A5149 /* ListView.swift in Sources */,
 				FA5896C92A991792003A5149 /* DisplayItem.swift in Sources */,
 				FA5896CE2A991F2A003A5149 /* ArticleService.swift in Sources */,
