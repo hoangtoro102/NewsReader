@@ -23,6 +23,9 @@
 		FA5896D22A9925A2003A5149 /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5896D12A9925A2003A5149 /* Store.swift */; };
 		FA5896D42A99266A003A5149 /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5896D32A99266A003A5149 /* ErrorView.swift */; };
 		FA5896D82A9926AD003A5149 /* DetailRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5896D72A9926AD003A5149 /* DetailRow.swift */; };
+		FA5896DA2A99A1E0003A5149 /* ImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5896D92A99A1E0003A5149 /* ImageView.swift */; };
+		FA5896DC2A99A2C1003A5149 /* ImageWebRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5896DB2A99A2C1003A5149 /* ImageWebRepository.swift */; };
+		FA5896DE2A99A4C9003A5149 /* ImagesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5896DD2A99A4C9003A5149 /* ImagesService.swift */; };
 		FAE6E1ED2A98DEDD001407E2 /* NewsReaderApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE6E1EC2A98DEDD001407E2 /* NewsReaderApp.swift */; };
 		FAE6E1F22A98DEDD001407E2 /* NewsReader.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FAE6E1F02A98DEDD001407E2 /* NewsReader.xcdatamodeld */; };
 		FAE6E1F42A98DEDD001407E2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE6E1F32A98DEDD001407E2 /* ContentView.swift */; };
@@ -47,6 +50,9 @@
 		FA5896D12A9925A2003A5149 /* Store.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
 		FA5896D32A99266A003A5149 /* ErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
 		FA5896D72A9926AD003A5149 /* DetailRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailRow.swift; sourceTree = "<group>"; };
+		FA5896D92A99A1E0003A5149 /* ImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageView.swift; sourceTree = "<group>"; };
+		FA5896DB2A99A2C1003A5149 /* ImageWebRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageWebRepository.swift; sourceTree = "<group>"; };
+		FA5896DD2A99A4C9003A5149 /* ImagesService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagesService.swift; sourceTree = "<group>"; };
 		FAE6E1E92A98DEDD001407E2 /* NewsReader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NewsReader.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAE6E1EC2A98DEDD001407E2 /* NewsReaderApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsReaderApp.swift; sourceTree = "<group>"; };
 		FAE6E1F12A98DEDD001407E2 /* NewsReader.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = NewsReader.xcdatamodel; sourceTree = "<group>"; };
@@ -125,6 +131,7 @@
 			isa = PBXGroup;
 			children = (
 				FA5896CA2A9919A2003A5149 /* ArticlesWebRepository.swift */,
+				FA5896DB2A99A2C1003A5149 /* ImageWebRepository.swift */,
 			);
 			path = Repositories;
 			sourceTree = "<group>";
@@ -134,6 +141,7 @@
 			children = (
 				FA5896D32A99266A003A5149 /* ErrorView.swift */,
 				FA5896D72A9926AD003A5149 /* DetailRow.swift */,
+				FA5896D92A99A1E0003A5149 /* ImageView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -169,6 +177,7 @@
 			isa = PBXGroup;
 			children = (
 				FA5896CD2A991F2A003A5149 /* ArticleService.swift */,
+				FA5896DD2A99A4C9003A5149 /* ImagesService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -286,7 +295,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA5896DA2A99A1E0003A5149 /* ImageView.swift in Sources */,
 				FA5896BF2A9909EF003A5149 /* WebRepository.swift in Sources */,
+				FA5896DC2A99A2C1003A5149 /* ImageWebRepository.swift in Sources */,
 				FA5896BB2A9909A4003A5149 /* NetworkConstants.swift in Sources */,
 				FA5896C72A991782003A5149 /* ListViewModel.swift in Sources */,
 				FA5896D22A9925A2003A5149 /* Store.swift in Sources */,
@@ -303,6 +314,7 @@
 				FA5896CB2A9919A2003A5149 /* ArticlesWebRepository.swift in Sources */,
 				FA5896B52A990910003A5149 /* Article.swift in Sources */,
 				FA5896C12A990A4B003A5149 /* NetworkingHelpers.swift in Sources */,
+				FA5896DE2A99A4C9003A5149 /* ImagesService.swift in Sources */,
 				FA5896BD2A9909CA003A5149 /* APICall.swift in Sources */,
 				FA5896D82A9926AD003A5149 /* DetailRow.swift in Sources */,
 			);

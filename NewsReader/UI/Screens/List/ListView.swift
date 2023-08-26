@@ -62,7 +62,11 @@ private extension ListView {
         ScrollView {
             LazyVStack {
                 ForEach(articles) { article in
-                    DetailRow(titleLabel: Text(article.title), dateLabel: Text(article.date))
+                    DetailRow(
+                        titleLabel: Text(article.title),
+                        dateLabel: Text(article.date),
+                        imageView: ImageView(viewModel: .init(imageURL: URL(string: article.photoUrl)!))
+                    )
                 }
             }
         }
